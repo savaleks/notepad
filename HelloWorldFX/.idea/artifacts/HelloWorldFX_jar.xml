@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HelloWorldFX:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HelloWorldFX_jar</output-path>
+    <root id="archive" name="HelloWorldFX.jar">
+      <element id="module-output" name="HelloWorldFX" />
+    </root>
+  </artifact>
+</component>
