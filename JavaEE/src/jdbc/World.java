@@ -6,11 +6,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class World {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         String userName = "root";
-        String password = "nbuser";
-        String connectionUrl = "jdbc:mysql://localhost/world?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-
+        String password = "savaleks";
+        String connectionUrl = "jdbc:mysql://localhost/consult";
         Class.forName("com.mysql.cj.jdbc.Driver");
         try(Connection connection = DriverManager.getConnection(connectionUrl, userName, password)){
             System.out.println("We'are connected!");
