@@ -1,7 +1,9 @@
 package com.savaleks.model;
 
+import com.savaleks.util.LocalDateAdapter;
 import javafx.beans.property.*;
 
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 
 public class Person {
@@ -97,6 +99,7 @@ public class Person {
         return city;
     }
 
+    @XmlJavaTypeAdapter(LocalDateAdapter.class)
     public LocalDate getBirthday() {
         return birthday.get();
     }

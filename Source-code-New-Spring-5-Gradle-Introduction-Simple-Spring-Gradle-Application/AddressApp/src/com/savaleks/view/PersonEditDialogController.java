@@ -5,6 +5,7 @@ import com.savaleks.util.DateUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class PersonEditDialogController {
@@ -29,11 +30,13 @@ public class PersonEditDialogController {
 
     @FXML
     private void initialize(){
+
     }
 
     // == set up scene for this window ==
     public void setDialogStage(Stage dialogStage){
         this.dialogStage = dialogStage;
+        this.dialogStage.getIcons().add(new Image("file:resources/images/person.png"));
     }
 
     // == get address holder for change information ==
